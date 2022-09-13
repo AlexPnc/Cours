@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaires</title>
+</head>
+
+<body>
+    <label for="cars">Choose a car</label>
+    <select name="cars" id="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+    </select> <br> <br>
+
+    <form action="get">
+        <label for="nom">Votre nom* :<br>
+            <input type="text" name="nom" id="nom" required>
+        </label><br> <br>
+        <label for="prenom">Votre prénom* :<br>
+            <input type="text" name="prenom" id="prenom" required>
+        </label><br> <br>
+        <label for="tel">Votre numéro de téléphone* : <br>
+            <input type="tel" name="tel" required>
+        </label> <br> <br>
+        <label for="mail">Votre adresse mail* : <br>
+            <input type="email" name="mail" required>
+        </label> <br> <br>
+        <label for="ville">Sélectonner la ville : </label> <br>
+        <select name="ville" id="ville"> <br>
+            <option value="lille">Lille</option>
+            <option value="paris" selected>Paris</option>
+            <option value="marseille">Marseille</option>
+            <option value="lyon">Lyon</option>
+        </select> <br> <br>
+        <label for="date">Date d'arrivée : <br>
+            <input type="date" name="date" id="date">
+        </label> <br> <br>
+        <label for="nombre">Nombre de personnes : <br>
+            <input type="number" name="nombre" id="nombre">
+        </label> <br> <br>
+        <label for="options"> Choisissez vos options : <br>
+            <input type="checkbox" name="options"> Climatisation
+            <input type="checkbox" name="options"> Mini bar
+            <input type="checkbox" name="options"> Jacuzzi
+        </label> <br> <br>
+        <textarea name="commentaires" id="commentaires" cols="30" rows="2">Ajouter un commentaire.</textarea> <br> <br>
+        <label for="cgv">Acceptation des conditions générales de vente (CGV)* <br>
+            <input type="radio" name="cgv" required>J'accepte
+            <input type="radio" name="cgv">Je refuse
+        </label> <br> <br>
+        <input type="submit" value="Envoyer ma demande">
+    </form>
+</body>
+
+</html>
